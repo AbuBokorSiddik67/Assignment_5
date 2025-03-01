@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,15 +16,18 @@
 		<!-- style start -->
 		<style>
 			.bg-color {
-				background-color: rgba(229, 234, 250, 0.904);
+				background-color: rgb(244, 247, 255);
 			}
 			.nav-bg-color {
 				background-color: rgb(255, 255, 255);
 			}
+			.body-bg-color {
+				background-color: rgb(244, 247, 255);
+			}
 		</style>
 		<!-- style end -->
 	</head>
-	<body id="bg-color">
+	<body id="" class="body-bg-color">
 		<!-- Header Section Start -->
 		<header>
 			<!-- NavBar Start -->
@@ -67,30 +70,62 @@
 			<section class="px-6 pt-6 pb-4">
 				<div class="mx-auto flex space-x-6">
 					<div class="w-[70%] h-[918px] nav-bg-color rounded-xl">
-						<div class="navbar mt-2 ml-2 mr-2  w-[100%] flex justify-between">
-							<div class="bg-color space-x-3 px-4 py-4 w-44 rounded-xl flex items-center">
-								<img class="w-4 h-4" src="./assets/checkbox.png" alt="" />
+						<div class="navbar mt-2 ml-2 mr-2 w-[100%] flex justify-between">
+							<div
+								class="bg-color space-x-3 px-4 py-4 w-48 rounded-xl flex items-center"
+							>
+								<div class="bg-white p-2 rounded-3xl">
+									<img class="w-5 h-5" src="./assets/checkbox.png" alt="" />
+								</div>
 								<div class="text-black">
-									<p class="text-[15px]">Task Assignment</p>
-									<h3 id="" class="font-bold text-xl">05</h3>
+									<p class="text-[13px]">Task Assignment</p>
+									<h3 id="" class="font-bold text-[24px]">05</h3>
 								</div>
 							</div>
-							<div class="bg-gradient-to-r from-blue-500 via-indigo-500 to-indigo-400 w-[55%] px-4 py-[9px] rounded-xl flex items-center space-x-4">
+							<div
+								class="bg-gradient-to-r from-blue-500 via-indigo-500 to-indigo-400 w-[50%] px-4 py-[11px] rounded-xl flex items-center space-x-4"
+							>
 								<img class="w-16" src="./assets/board.png" alt="" />
 								<div class="text-black">
-									<p class="text-[20px] text-white">Discover Something <br>New Today</p>
+									<p class="text-[20px] text-white">
+										Discover Something <br />New Today
+									</p>
 								</div>
 							</div>
-							<div class="bg-color space-x-3 px-4 py-4 mr-4 w-44 rounded-xl flex items-center">
-								<img class="w-4 h-4" src="./assets/calender.png" alt="" />
+							<div
+								class="bg-color space-x-3 px-4 py-4 mr-4 w-48 rounded-xl flex items-center"
+							>
+								<div class="bg-white p-2 rounded-3xl">
+									<img class="w-5 h-5" src="./assets/calender.png" alt="" />
+								</div>
 								<div class="text-black">
-									<h3 id="day" class="font-bold text-"></h3>
-									<h3 id="date" class="font-bold text-"></h3>
+									<h3 id="day" class="text-[18px]"></h3>
+									<h3 id="date" class="font-bold text-[18px]"></h3>
+								</div>
+							</div>
+						</div>
+						<div class="mt-10">
+							<div class="border w-[300px] bg-color">
+								<p class="px-2 py-1 w-[70px] text-[12px] bg-white rounded">
+									ShopEase
+								</p>
+								<h3 id="card-title-1" class="text-[14px] font-bold">
+									Fix Mobile Button Issue
+								</h3>
+								<p class="text-[10px] text-center bg-white px-2 py-2 mx-3 w-[200px]"
+								>
+									Debug using Chrome DevTools <br />, check for overlapping
+								</p>
+								<div class="flex items-center justify-between">
+									<p class="text-[12px]">Deadline<br />21 March 2025</p>
+									<button class="btn bg-blue-600 text-[12px]">Completed</button>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="w-[29%] h-[918px] nav-bg-color rounded-xl"></div>
+					<div class="w-[29%] h-[918px] nav-bg-color rounded-xl">
+						<p class="text-black">hello world</p>
+					</div>
 				</div>
 			</section>
 			<!-- Section_1_End -->
