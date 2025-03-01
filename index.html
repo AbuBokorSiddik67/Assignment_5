@@ -1,15 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dev_board</title>
-</head>
-<body>
+<html lang="en" data-theme="dark">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>dev-board-main</title>
+		<!-- Style Site Link Start -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@5"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<!-- Style Site Link End -->
 
-    <h1>Hello world ! how are you ?</h1>
-    <p>hello world</p>
-    <h2>hello world</h2>
-    
-</body>
+		<!-- style start -->
+		<style>
+			.bg-color {
+				background-color: rgba(229, 234, 250, 0.904);
+			}
+			.nav-bg-color {
+				background-color: rgb(255, 255, 255);
+			}
+		</style>
+		<!-- style end -->
+	</head>
+	<body id="bg-color">
+		<!-- Header Section Start -->
+		<header>
+			<!-- NavBar Start -->
+			<nav class="px-6 pt-6">
+				<div class="navbar bg-base-100 shadow-sm rounded-xl nav-bg-color">
+					<div class="flex-1">
+						<div class="flex items-center space-x-2 text-2xl">
+							<img src="./assets/logo.png" alt="web-logo" />
+							<h2 class="text-black">
+								Dev<span class="font-bold">Board</span>
+							</h2>
+						</div>
+					</div>
+					<div class="flex-none">
+						<ul class="menu menu-horizontal px-1 flex items-center">
+							<li>
+								<div
+									class="flex items-center bg-color rounded-3xl mr-2 space-x-2"
+								>
+									<img class="w-6" src="./assets/checkbox.png" alt="" />
+									<p id="" class="text-[16px] text-black">23</p>
+								</div>
+							</li>
+							<li>
+								<button id="bg-color-btn">
+									<img src="./assets/theme-btn.png" alt="" />
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- NavBar End -->
+		</header>
+		<!-- Header Section End -->
+
+		<!-- Main Section Start -->
+		<main>
+			<!-- Section_1_Start -->
+			<section class="px-6 pt-6 pb-4">
+				<div class="mx-auto flex space-x-6">
+					<div class="w-[70%] h-[918px] nav-bg-color rounded-xl">
+						<div class="navbar mt-2 ml-2 mr-2  w-[100%] flex justify-between">
+							<div class="bg-color space-x-3 px-4 py-4 w-44 rounded-xl flex items-center">
+								<img class="w-4 h-4" src="./assets/checkbox.png" alt="" />
+								<div class="text-black">
+									<p class="text-[15px]">Task Assignment</p>
+									<h3 id="" class="font-bold text-xl">05</h3>
+								</div>
+							</div>
+							<div class="bg-gradient-to-r from-blue-500 via-indigo-500 to-indigo-400 w-[55%] px-4 py-[9px] rounded-xl flex items-center space-x-4">
+								<img class="w-16" src="./assets/board.png" alt="" />
+								<div class="text-black">
+									<p class="text-[20px] text-white">Discover Something <br>New Today</p>
+								</div>
+							</div>
+							<div class="bg-color space-x-3 px-4 py-4 mr-4 w-44 rounded-xl flex items-center">
+								<img class="w-4 h-4" src="./assets/calender.png" alt="" />
+								<div class="text-black">
+									<h3 id="day" class="font-bold text-"></h3>
+									<h3 id="date" class="font-bold text-"></h3>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="w-[29%] h-[918px] nav-bg-color rounded-xl"></div>
+				</div>
+			</section>
+			<!-- Section_1_End -->
+		</main>
+		<!-- Main Section End -->
+
+		<!-- Footer Section Start -->
+		<footer></footer>
+		<!-- Footer Section End -->
+
+		<!-- JavaScript Link Stat -->
+		<script src="./script/main.js"></script>
+		<!-- JavaScript Link End -->
+	</body>
 </html>
