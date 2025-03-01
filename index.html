@@ -24,6 +24,12 @@
 			.body-bg-color {
 				background-color: rgb(244, 247, 255);
 			}
+			.border-dot {
+				color: rgba(55, 82, 253, 0.2);
+			}
+			.border-bot {
+				border-bottom: 2px dashed rgba(55, 82, 253, 0.2);
+			}
 		</style>
 		<!-- style end -->
 	</head>
@@ -61,6 +67,10 @@
 				</div>
 			</nav>
 			<!-- NavBar End -->
+
+			<!-- Doted border bottom start -->
+
+			<!-- Doted border bottom end -->
 		</header>
 		<!-- Header Section End -->
 
@@ -69,8 +79,10 @@
 			<!-- Section_1_Start -->
 			<section class="px-6 pt-6 pb-4">
 				<div class="mx-auto flex space-x-6">
-					<div class="w-[70%] h-[918px] nav-bg-color rounded-xl">
-						<div class="navbar mt-2 ml-2 mr-2 w-[100%] flex justify-between">
+					<div class="w-[70%] h-[905px] nav-bg-color rounded-xl">
+						<div
+							class="navbar mt-3 mb- ml-2 mr-2 w-[100%] flex justify-between"
+						>
 							<div
 								class="bg-color space-x-3 px-4 py-4 w-48 rounded-xl flex items-center"
 							>
@@ -83,7 +95,9 @@
 								</div>
 							</div>
 							<div
-								class="bg-gradient-to-r from-blue-500 via-indigo-500 to-indigo-400 w-[50%] px-4 py-[11px] rounded-xl flex items-center space-x-4"
+								id="blog"
+								onclick="blog()"
+								class="cursor-pointer bg-gradient-to-r from-blue-500 via-indigo-500 to-indigo-400 w-[50%] px-4 py-[11px] rounded-xl flex items-center space-x-4"
 							>
 								<img class="w-16" src="./assets/board.png" alt="" />
 								<div class="text-black">
@@ -104,27 +118,242 @@
 								</div>
 							</div>
 						</div>
-						<div class="mt-10">
-							<div class="border w-[300px] bg-color">
-								<p class="px-2 py-1 w-[70px] text-[12px] bg-white rounded">
+						<p class="text-[30px] overflow-hidden w-[100%] h-6 border-dot">
+							----------------------------------------------------------------------------------------------------------
+						</p>
+						<div class="mt-7 grid grid-cols-3 gap-10 mr-3 ml-4">
+							<div
+								class="w-[260px] bg-color space-y-2 pl-4 pr-4 py-4 rounded-xl"
+							>
+								<p class="px-2 py-1 w-[70px] text-[14px] bg-white rounded">
 									ShopEase
 								</p>
-								<h3 id="card-title-1" class="text-[14px] font-bold">
+								<h3 id="card-title-1" class="text-[16px] font-bold">
 									Fix Mobile Button Issue
 								</h3>
-								<p class="text-[10px] text-center bg-white px-2 py-2 mx-3 w-[200px]"
+								<p
+									class="text-[12px] text-center bg-white py-2 w-[225px] rounded"
 								>
 									Debug using Chrome DevTools <br />, check for overlapping
 								</p>
-								<div class="flex items-center justify-between">
-									<p class="text-[12px]">Deadline<br />21 March 2025</p>
-									<button class="btn bg-blue-600 text-[12px]">Completed</button>
+								<p class="border-bot"></p>
+								<div class="flex items-center justify-between pr-1">
+									<p class="text-[14px]">
+										Deadline<br /><span class="font-bold">21 March 2025</span>
+									</p>
+									<button class="bg-blue-600 text-[14px] px-2 py-1 rounded">
+										Completed
+									</button>
+								</div>
+							</div>
+							<div
+								class="w-[260px] bg-color space-y-2 pl-4 pr-4 py-4 rounded-xl"
+							>
+								<p class="px-2 py-1 w-[70px] text-[14px] bg-white rounded">
+									ShopEase
+								</p>
+								<h3 id="card-title-1" class="text-[16px] font-bold">
+									Fix Mobile Button Issue
+								</h3>
+								<p
+									class="text-[12px] text-center bg-white py-2 w-[225px] rounded"
+								>
+									Debug using Chrome DevTools <br />, check for overlapping
+								</p>
+								<p class="border-bot"></p>
+								<div class="flex items-center justify-between pr-1">
+									<p class="text-[14px]">
+										Deadline<br /><span class="font-bold">21 March 2025</span>
+									</p>
+									<button class="bg-blue-600 text-[14px] px-2 py-1 rounded">
+										Completed
+									</button>
+								</div>
+							</div>
+							<div
+								class="w-[260px] bg-color space-y-2 pl-4 pr-4 py-4 rounded-xl"
+							>
+								<p class="px-2 py-1 w-[70px] text-[14px] bg-white rounded">
+									ShopEase
+								</p>
+								<h3 id="card-title-1" class="text-[16px] font-bold">
+									Fix Mobile Button Issue
+								</h3>
+								<p
+									class="text-[12px] text-center bg-white py-2 w-[225px] rounded"
+								>
+									Debug using Chrome DevTools <br />, check for overlapping
+								</p>
+								<p class="border-bot"></p>
+								<div class="flex items-center justify-between pr-1">
+									<p class="text-[14px]">
+										Deadline<br /><span class="font-bold">21 March 2025</span>
+									</p>
+									<button class="bg-blue-600 text-[14px] px-2 py-1 rounded">
+										Completed
+									</button>
+								</div>
+							</div>
+							<div
+								class="w-[260px] bg-color space-y-2 pl-4 pr-4 py-4 rounded-xl"
+							>
+								<p class="px-2 py-1 w-[70px] text-[14px] bg-white rounded">
+									ShopEase
+								</p>
+								<h3 id="card-title-1" class="text-[16px] font-bold">
+									Fix Mobile Button Issue
+								</h3>
+								<p
+									class="text-[12px] text-center bg-white py-2 w-[225px] rounded"
+								>
+									Debug using Chrome DevTools <br />, check for overlapping
+								</p>
+								<p class="border-bot"></p>
+								<div class="flex items-center justify-between pr-1">
+									<p class="text-[14px]">
+										Deadline<br /><span class="font-bold">21 March 2025</span>
+									</p>
+									<button class="bg-blue-600 text-[14px] px-2 py-1 rounded">
+										Completed
+									</button>
+								</div>
+							</div>
+							<div
+								class="w-[260px] bg-color space-y-2 pl-4 pr-4 py-4 rounded-xl"
+							>
+								<p class="px-2 py-1 w-[70px] text-[14px] bg-white rounded">
+									ShopEase
+								</p>
+								<h3 id="card-title-1" class="text-[16px] font-bold">
+									Fix Mobile Button Issue
+								</h3>
+								<p
+									class="text-[12px] text-center bg-white py-2 w-[225px] rounded"
+								>
+									Debug using Chrome DevTools <br />, check for overlapping
+								</p>
+								<p class="border-bot"></p>
+								<div class="flex items-center justify-between pr-1">
+									<p class="text-[14px]">
+										Deadline<br /><span class="font-bold">21 March 2025</span>
+									</p>
+									<button class="bg-blue-600 text-[14px] px-2 py-1 rounded">
+										Completed
+									</button>
+								</div>
+							</div>
+							<div
+								class="w-[260px] bg-color space-y-2 pl-4 pr-4 py-4 rounded-xl"
+							>
+								<p class="px-2 py-1 w-[70px] text-[14px] bg-white rounded">
+									ShopEase
+								</p>
+								<h3 id="card-title-1" class="text-[16px] font-bold">
+									Fix Mobile Button Issue
+								</h3>
+								<p
+									class="text-[12px] text-center bg-white py-2 w-[225px] rounded"
+								>
+									Debug using Chrome DevTools <br />, check for overlapping
+								</p>
+								<p class="border-bot"></p>
+								<div class="flex items-center justify-between pr-1">
+									<p class="text-[14px]">
+										Deadline<br /><span class="font-bold">21 March 2025</span>
+									</p>
+									<button class="bg-blue-600 text-[14px] px-2 py-1 rounded">
+										Completed
+									</button>
+								</div>
+							</div>
+							<div
+								class="w-[260px] bg-color space-y-2 pl-4 pr-4 py-4 rounded-xl"
+							>
+								<p class="px-2 py-1 w-[70px] text-[14px] bg-white rounded">
+									ShopEase
+								</p>
+								<h3 id="card-title-1" class="text-[16px] font-bold">
+									Fix Mobile Button Issue
+								</h3>
+								<p
+									class="text-[12px] text-center bg-white py-2 w-[225px] rounded"
+								>
+									Debug using Chrome DevTools <br />, check for overlapping
+								</p>
+								<p class="border-bot"></p>
+								<div class="flex items-center justify-between pr-1">
+									<p class="text-[14px]">
+										Deadline<br /><span class="font-bold">21 March 2025</span>
+									</p>
+									<button class="bg-blue-600 text-[14px] px-2 py-1 rounded">
+										Completed
+									</button>
+								</div>
+							</div>
+							<div
+								class="w-[260px] bg-color space-y-2 pl-4 pr-4 py-4 rounded-xl"
+							>
+								<p class="px-2 py-1 w-[70px] text-[14px] bg-white rounded">
+									ShopEase
+								</p>
+								<h3 id="card-title-1" class="text-[16px] font-bold">
+									Fix Mobile Button Issue
+								</h3>
+								<p
+									class="text-[12px] text-center bg-white py-2 w-[225px] rounded"
+								>
+									Debug using Chrome DevTools <br />, check for overlapping
+								</p>
+								<p class="border-bot"></p>
+								<div class="flex items-center justify-between pr-1">
+									<p class="text-[14px]">
+										Deadline<br /><span class="font-bold">21 March 2025</span>
+									</p>
+									<button class="bg-blue-600 text-[14px] px-2 py-1 rounded">
+										Completed
+									</button>
+								</div>
+							</div>
+							<div
+								class="w-[260px] bg-color space-y-2 pl-4 pr-4 py-4 rounded-xl"
+							>
+								<p class="px-2 py-1 w-[70px] text-[14px] bg-white rounded">
+									ShopEase
+								</p>
+								<h3 id="card-title-1" class="text-[16px] font-bold">
+									Fix Mobile Button Issue
+								</h3>
+								<p
+									class="text-[12px] text-center bg-white py-2 w-[225px] rounded"
+								>
+									Debug using Chrome DevTools <br />, check for overlapping
+								</p>
+								<p class="border-bot"></p>
+								<div class="flex items-center justify-between pr-1">
+									<p class="text-[14px]">
+										Deadline<br /><span class="font-bold">21 March 2025</span>
+									</p>
+									<button class="bg-blue-600 text-[14px] px-2 py-1 rounded">
+										Completed
+									</button>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="w-[29%] h-[918px] nav-bg-color rounded-xl">
-						<p class="text-black">hello world</p>
+					<div class="w-[29%] h-[905px] nav-bg-color rounded-xl">
+						<div class="text-center space-y-3 mt-6 mb-4">
+							<div class="flex space-x-3 justify-center">
+								<img class="w-[25px]" src="./assets/activity.png" alt="" />
+								<p class="text-[18px] font-bold">Activity Log</p>
+							</div>
+							<button id="blog" class="btn bg-blue-600 text-[14px] text-white">
+								Clear History
+							</button>
+						</div>
+						<p class="border-bot mb-4"></p>
+						<div class="pl-[15px] pr-[15px]">
+							<p>history in all here</p>
+						</div>
 					</div>
 				</div>
 			</section>

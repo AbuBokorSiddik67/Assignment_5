@@ -9,7 +9,7 @@ document.getElementById("bg-color-btn").addEventListener("click", function () {
     document.body.style.backgroundColor = getRandomColor();
 });
 // Random color in all body function end
-// Local time start
+// Local date start
 function getFormattedDate() {
     let now = new Date();
     let day = now.toLocaleDateString('en-US', { weekday: 'short' }) + ",";
@@ -17,6 +17,10 @@ function getFormattedDate() {
     document.getElementById("day").innerText = day;
     document.getElementById("date").innerText = date;
 }
-document.getElementById("day,date").innerText = getFormattedDate();
-
-// Local time end
+getFormattedDate();
+// Local date end
+// Blog page work start
+function blog() {
+    window.location.href = "blog.html";
+}
+// Blog page work end
