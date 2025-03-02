@@ -45,6 +45,10 @@ for (let button of buttons) {
         if (conTaskNO === 0 && conCompleteNO === 29) {
             alert("Congrats!!! You have completed all the current task.");
         }
+        // Time for history Start
+        let time = new Date();
+        let times = time.toLocaleTimeString("en-GB");
+        // Time for history End
         // History Check Start
         let parent = this.parentElement.parentElement;
         let h3 = parent.querySelector("h3");
@@ -53,8 +57,15 @@ for (let button of buttons) {
         let History = document.getElementById('history');
         let p = document.createElement("p");
         p.innerText = `
-        You have Complete The Task ${value} at 12:48:15 P
+        You have Complete The Task ${value} at ${times};
         `
+        p.style.paddingBottom = "10px";
+        p.style.paddingTop = "0px";
+        p.style.marginBottom = "5px";
+        p.style.background = "rgb(244, 247, 255)";
+        p.style.borderRadius = "15px";
+        p.style.paddingLeft = "13px";
+        p.style.fontSize = "14px";
         History.appendChild(p);
         // History Check End
     });
@@ -63,6 +74,6 @@ for (let button of buttons) {
 // Clear History Start
 document.getElementById("clear").addEventListener("click", function () {
     let History = document.getElementById('history');
-    History.innerText =" ";
+    History.innerText = " ";
 })
 // Clear History End

@@ -4,12 +4,44 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>blog-site</title>
+		<!-- Style Site Link Start -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@5"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<!-- Style Site Link End -->
+		<!-- Style Start -->
+		<style>
+			.border-bot {
+				border-bottom: 2px dashed rgba(55, 82, 253, 0.2);
+			}
+			.body-bg-color {
+				background-color: rgba(226, 222, 243, 0.432);
+			}
+		</style>
+		<!-- Style Start -->
 	</head>
-	<body>
+	<body class="body-bg-color">
 		<!-- Header Section Start -->
 		<header>
 			<!-- NavBar Start -->
-			<nav>hello</nav>
+			<nav class="px-16 pt-8">
+				<div class="navbar bg-base-100 shadow-sm rounded-xl nav-bg-color">
+					<div class="flex-1">
+						<div class="flex items-center space-x-2 text-2xl">
+							<img src="./assets/logo.png" alt="web-logo" />
+							<h2 class="text-black">
+								Dev<span class="font-bold">Board</span>
+							</h2>
+						</div>
+					</div>
+					<div class="flex-none">
+						<button id="back-btn" class="btn bg-blue-600">Back to Desk</button>
+					</div>
+				</div>
+			</nav>
 			<!-- NavBar End -->
 		</header>
 		<!-- Header Section End -->
@@ -17,6 +49,109 @@
 		<!-- Main Section Start -->
 		<main>
 			<!-- Section_1_Start -->
+			<section id="blog" class="px-16 pb-8">
+				<h1 class="text-center font-bold text-2xl mt-4 mb-4">Blogs</h1>
+				<div class="space-y-5">
+					<!-- Question 1 & answer -->
+					<div
+						tabindex="0"
+						class="collapse collapse-open bg-base-100 border-base-300 border"
+					>
+						<div class="mb-4 font-semibold">
+							<p class="pl-4 pr-4 pt-3">
+								Question-1: What are the different ways to select an element in
+								the DOM?
+							</p>
+							<p class="border-bot mt-2"></p>
+						</div>
+						<div class="collapse-content text-sm">
+							There are fifth ways to select an element in the Dom: <br />
+							1. querySelector. <br />
+							2. querySelectorAll. <br />
+							3. getElementById. <br />
+							4. getElementByName. <br />
+							5. getElementByTagName. <br />
+						</div>
+					</div>
+					<!-- Question 2 & answer -->
+					<div
+						tabindex="0"
+						class="collapse collapse-open bg-base-100 border-base-300 border"
+					>
+						<div class="mb-4 font-semibold">
+							<p class="pl-4 pr-4 pt-3">
+								Question-2: What is the difference between innerHTML, innerText,
+								and textContent ?
+							</p>
+							<p class="border-bot mt-2"></p>
+						</div>
+						<div class="collapse-content text-sm">
+							1. innerHTML use to insert dynamic HTML content. 2. innerText use
+							to get only visible text. 3. textContent use to get all text,
+							including hidden.
+						</div>
+					</div>
+					<!-- Question 3 & answer -->
+					<div
+						tabindex="0"
+						class="collapse collapse-open bg-base-100 border-base-300 border"
+					>
+						<div class="mb-4 font-semibold">
+							<p class="pl-4 pr-4 pt-3">
+								Question-3: What is event delegation in the DOM?
+							</p>
+							<p class="border-bot mt-2"></p>
+						</div>
+						<div class="collapse-content text-sm">
+							Event Delegation is a pattern based upon the concept of Event
+							Bubbling. It is an event-handling pattern that allows you to
+							handle events at a higher level in the DOM tree other than the
+							level where the event was first received.
+						</div>
+					</div>
+					<!-- Question 4 & answer -->
+					<div
+						tabindex="0"
+						class="collapse collapse-open bg-base-100 border-base-300 border"
+					>
+						<div class="mb-4 font-semibold">
+							<p class="pl-4 pr-4 pt-3">
+								Question-4: What is event bubbling in the DOM?
+							</p>
+							<p class="border-bot mt-2"></p>
+						</div>
+						<div class="collapse-content text-sm">
+							Event bubbling in the DOM is a mechanism where an event triggered
+							on a child element propagates upward through its ancestors in the
+							DOM hierarchy, allowing parent elements to respond to events
+							triggered by their child elements. This means the event starts at
+							the target element and propagates upward through its parent
+							elements to the root of the DOM.
+						</div>
+					</div>
+					<!-- Question 5 & answer -->
+					<div
+						tabindex="0"
+						class="collapse collapse-open bg-base-100 border-base-300 border"
+					>
+						<div class="mb-4 font-semibold">
+							<p class="pl-4 pr-4 pt-3">
+								Question-5: How do you create, add, and remove elements using
+								JavaScript?
+							</p>
+							<p class="border-bot mt-2"></p>
+						</div>
+						<div class="collapse-content text-sm">
+							let newElement = document.createElement("div"); // Create a new
+							div <br />
+							document.body.appendChild(newElement); // Add new element to the
+							body <br />
+							let elementToRemove = document.getElementById("elementId");
+							elementToRemove.remove(); // Remove the element directly <br />
+						</div>
+					</div>
+				</div>
+			</section>
 			<!-- Section_1_End -->
 		</main>
 		<!-- Main Section End -->
@@ -24,5 +159,9 @@
 		<!-- Footer Section Start -->
 		<footer></footer>
 		<!-- Footer Section End -->
+
+		<!-- JavaScript Link Stat -->
+		<script src="./script/blog.js"></script>
+		<!-- JavaScript Link End -->
 	</body>
 </html>
